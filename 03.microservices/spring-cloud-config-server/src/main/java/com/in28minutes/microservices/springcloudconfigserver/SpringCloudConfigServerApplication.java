@@ -10,5 +10,9 @@ public class SpringCloudConfigServerApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringCloudConfigServerApplication.class, args);
+                for(int i =0; i <=2; i++) {
+            		System.out.println("***************** " + i + " **********************");
+        }
+
 	}
 }
