@@ -9,8 +9,8 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 public class SpringCloudConfigServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringCloudConfigServerApplication.class, args);
-                for(int i =0; i <=10; i++) {
+		
+		for(int i =0; i <=10; i++) {
             		System.out.println("*");
         }
 		System.out.println("Spring cloud config server running...");
@@ -18,6 +18,9 @@ public class SpringCloudConfigServerApplication {
 		for(int i =0; i <=10; i++) {
             		System.out.println("*");
         }
+		
+		
+		SpringApplication.run(SpringCloudConfigServerApplication.class, args);              
 
 	}
 }
