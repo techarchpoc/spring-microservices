@@ -15,9 +15,10 @@ public class LimitsConfigurationController {
 
 	@GetMapping("/limits")
 	public LimitConfiguration retrieveLimitsFromConfigurations() {
-		LimitConfiguration limitConfiguration = new LimitConfiguration(configuration.getMaximum(), 
-				configuration.getMinimum());
-		return limitConfiguration;
+		//LimitConfiguration limitConfiguration = new LimitConfiguration(configuration.getMaximum(), 
+		//		configuration.getMinimum());
+		//return limitConfiguration;
+		return new LimitConfiguration(1000,1);
 	}
 	
 	@GetMapping("/fault-tolerance-example")
